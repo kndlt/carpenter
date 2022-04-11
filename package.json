@@ -1,16 +1,9 @@
 {
-  "name": "voxeltracer",
+  "name": "mudvoxel",
   "version": "0.1.0",
-  "description": "Blazingly fast voxel ray tracer on web.",
-  "repository": "git@github.com:kndlt/voxeltracer.git",
+  "description": "Voxel Architect and Simulator",
+  "repository": "git@github.com:kndlt/mudvoxel.git",
   "author": "kndlt",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
   "scripts": {
     "clean": "rm -rf ./dist",
     "build:esm": "tsc -m esnext --outDir dist/esm",

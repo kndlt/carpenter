@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-header {
+  
+}
+
+.app-body {
+  flex-grow: 1;
+}
+
+.app-footer {
+  
+}

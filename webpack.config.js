@@ -1,18 +1,18 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/examples/index.tsx',
-  devtool: 'inline-source-map',
+  entry: "./src/main.tsx",
+  devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'voxeltracer-examples',
+      title: "mudvoxel",
     }),
   ],
   output: {
-    filename: 'examples.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true
+    filename: "mudvoxel.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   module: {
     rules: [
@@ -21,18 +21,18 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-        }
+        },
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.jsx'],
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
   },
   devServer: {
-    port: 3013,
-  }
+    port: 3014,
+  },
 };

@@ -23,7 +23,7 @@ function Box({ position, scale }: BoxProp) {
   );
 }
 
-export default function VoxelTracer({ src }: { src?: File | string }) {
+export default function VoxelCanvas({ src }: { src?: File | string }) {
   return (
     <Canvas>
       <ambientLight />
