@@ -1,0 +1,21 @@
+{
+  // Ref: https://marcobotto.com/blog/compiling-and-bundling-typescript-libraries-with-webpack/
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "outDir": "dist/cjs",
+    "noImplicitAny": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
